@@ -1,0 +1,57 @@
+php is backend language.dont show code in browser->view page source. hence secure
+
+install xampp->copy path->ctrl panel appears->start apache and mysql
+
+google ->localhost/dashboard/->page aaega navbar mei phpmyadmin(url->localhost/phpmyadmin/)
+
+file manager->copy path pr windows m xampp-> htdocs->make folder with short name eg cwh->run it as localhost/cwh/
+
+open folder in vs code->create index.php
+
+simple html boiler plate code by !
+
+body-> write <?php //code ?/ ...andr jo likhoge view source page m ni aaega browser m isilie code hide rhega.
+echo "" andr jo likhoge will render on page
+php is dynamically typed language hence no need to specify data type.
+
+//->single line comment and /* */ ->multi line comment
+
+variable -> $variable1=34; echo $variable1; this will print 34 on screen i.e.; localhost/cwh
+
+case sensitive nhi h -> echo and Echo r same 
+
+new line-> echo "<br>"; // we can insert html too in btw commas to render it
+
+Arithmetic operators-> +,-,*,/ .......... echo $variable1 + $variable2;
+Assignment operators-> =,+=,-=,*=,/= .......eg-> $newVar=$variable1;
+Comparison operators-> ==,!=,>=,<=......var_dump(1==4)-> bool(false)-> gives variable and value
+Increment/Decrement operators-> ++,-- ....concept of post,pre also exists here.
+Logical operators -> and , or, xor(dono same input tb result false) , not
+
+Data types in php-> String,Integer,Float,Boolean,Array,Object
+define("PI",3.14); ->define constant and can be accessed by just writing PI
+
+Conditional statements-> if-else.....,.....if-else if-else if-else
+loops-> for,while,do while, for each
+
+defining array-> $languages=array("python","c++","php","nodeJs");
+accessing array-> echo $languages[1]; .....//print c++
+count($lnguages);......//gives length, here 4
+
+foreach($languages as $value){
+    echo "<br>The value is:";
+    echo $value;
+}
+result: The value is Python ............The value is nodeJs
+
+types of functions -> built in(eg var_dump) and made by user
+ex-> function print($number){
+    echo $number;
+}// call as print(5);
+
+echo m concatenation hota h by .
+$len=strlen($str);//str contains string as $str="THIS";
+eg-> echo "The length of string is ".$len;
+built-in-> str_word_count($str).......strrev($str).........strpos($str,"is")............str_replace("is","at",$Str)
+
+form-> method get is insecure as it sends data in url while post is secure as it sends it to daatabase

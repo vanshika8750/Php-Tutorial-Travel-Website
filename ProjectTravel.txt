@@ -1,0 +1,38 @@
+CReated a form with normal html and css first
+Then, we will crete a database in phpmyadmin
+
+xampp ctrl panel m apache or mysql should set to start
+google -> url-> localhost/phpmyadmin/
+click on new then enter name of database , here trip
+then click create
+
+name the table as trip and create 8 cols for :-
+sno, name , age, gender, email, phone, other, date and time
+write the type,length and so on as you nee and in sno. null index will be primary,date time mei default value to current itmestamp
+click on save
+
+can change anything by clicking on change in structure
+then in insert,inset or enter data
+then click on go
+copy the query and paste in index.html and comment it
+query  - >  INSERT INTO `trip` (`sno`, `name`, `age`, `gender`, `email`, `phone`, `other`, `dt`) VALUES ('1', 'testname', '19', 'f', 'gtestname@gmail.com', '9999999999', 'first phpmyadmin msg', current_timestamp());
+click on browse, u can see the entered data in a row
+
+create index.php file
+will connect it to mysqli
+write code to connect to db in mysqli using in built fns in index.php
+
+make all variables according to the data we need then paste that query and remove sno as it is line wise so dont need to b entered
+then, replace values by the created variables
+ab form bharo toh query aajaegi screen par with values filled in it
+
+ab databse m query daalni h
+check for insertion and non insertion of data 
+databse query m trip.trip krdo
+
+always close it after use
+
+php file m html add krdo
+
+phpmyadmin->export click->format csv -> download
+it will download the data and will show it to us in excel
